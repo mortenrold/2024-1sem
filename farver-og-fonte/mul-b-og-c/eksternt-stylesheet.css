@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+body {
+    /* her kommer en HEX-farvekode */
+    background-color: #e4e5d6;
+    /*background-image: url("kat.jpeg");*/
+    background-image: linear-gradient(to right, lightblue,#7aa9b9);
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+p {
+    background-color: #F09507;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 143%;
+    text-transform: uppercase;
+    width: 500px;
+}
+h1 {
+    font-family: "danfo", arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 3px grey;
+}
+a {
+    color: pink;
+    font-family: arial, sans-serif;
+    letter-spacing: 2px;
+    /* display: none; */
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    background-color: yellow;
+}
+a:active {
+    color: coral;
+}
