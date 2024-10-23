@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+body {
+    background-image: linear-gradient(to right, lightblue, #70a0b0);
+    background-image: url("hund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightpink;
+    /*background-position: 50px 100px;*/
+}
+p {
+    color: white;
+    font-family: arial, sans-serif;
+    line-height: 143%;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 600px;
+}
+h1 {
+    background-color: #DBCB42;
+    color: white;
+    font-family: "DynaPuff", arial, helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 400;
+    font-style: italic;
+    /* gør alle bogstaver store */
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+    /*display: none;*/
+}
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+a:active {
+    background-color: white;
+    letter-spacing: 3px;
+}
