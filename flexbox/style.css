@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    background: #ddd;
+    margin: 15px;
+}
+.container-2 {
+    display: flex;
+    background: #ddd;
+    margin: 15px;
+    height: 500px;
+}
+.box {
+    background: dodgerblue;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+}
+.right {
+    justify-content: flex-end;
+}
+.even {
+    justify-content: space-evenly;
+}
+.hoppe-ned {
+    flex-wrap: wrap;
+}
+.lodret {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.lodret-akse {
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+.special {
+    background: seagreen;
+    order: -1;
+}
+.special-2 {
+    order: 17;
+}
