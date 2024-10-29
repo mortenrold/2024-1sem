@@ -1,0 +1,99 @@
+/* "browser reset" aka "CSS reset" */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+.logo, nav, .sidebar, article, .banner, footer {
+    padding: 10px;
+    box-sizing: border-box;
+    /* afstand på fire sider: top, højre, bund, venstre */
+    margin: 10px 2% 0 2%;
+}
+.logo {
+    background: lightblue;
+    height: 60px;
+}
+nav {
+    background: mediumseagreen;
+    height: 60px;
+}
+.sidebar {
+    background: lemonchiffon;
+    display: none;
+}
+article {
+    background: lightcoral;
+    height: 400px;
+}
+.banner {
+    background: orange;
+    height: 80px;
+}
+footer {
+    background: lightgray;
+    display: none;
+}
+
+/* ændringer i layoutet på tablet ("media query") */
+@media screen and (min-width: 718px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        display: block;
+        height: 60px;
+    }
+    .logo {
+        width: 25%;
+    }
+    nav {
+        width: 69%;
+        margin-left: 0;
+    }
+    article {
+        width: 60%;
+    }
+    .banner {
+        width: 34%;
+        margin-left: 0;
+        height: 400px;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1084px) {
+    .sidebar {
+        display: block;
+        width: 25%;
+    }
+    article {
+        margin-left: 0;
+        width: 45%;
+    }
+    .banner {
+        width: 22%;
+    }
+    /* når skærmen er breddere end 1264px, skal layoutet ikke udvide sig mere */
+    .container {
+        max-width: 1264px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* mobile hack: nav skal ligge fast i bunden */
+@media screen and (max-width: 717px) {
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+    }
+}
