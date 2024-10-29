@@ -1,0 +1,103 @@
+/* "Browser reset" aka "CSS reset" */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+.logo, .nav, .sidebar, article, .banner, footer {
+    /* padding tæller nu ikke med, når den samlede bredde udregnes */
+    box-sizing: border-box;
+    padding: 10px;
+    /* afstand uret rundt: top, højre, bund, venstre */
+    margin: 10px 2% 10px 2%;
+}
+.logo {
+    background: #999;
+}
+.nav {
+    background: lightcoral;
+}
+.sidebar {
+    background: dodgerblue;
+    /* fjern sidebar og footer fra mobil-layout */
+    display: none;
+}
+article {
+    background: goldenrod;
+    height: 400px;
+}
+.banner {
+    background: hotpink;
+    height: 80px;
+}
+footer {
+    background: #ddd;
+    height: 60px;
+    display: none;
+}
+
+/* styling til tablets */
+@media screen and (min-width: 712px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        display: block;
+        width: 96%;
+    }
+    .logo {
+        width: 25%;
+    }
+    .nav {
+        width: 69%;
+        margin-left: 0;
+    }
+    article {
+        width: 60%;
+    }
+    .banner {
+        width: 34%;
+        margin-left: 0;
+        height: 400px;
+    }
+}
+
+/* styling til desktop */
+@media screen and (min-width: 1020px) {
+    .sidebar {
+        display: block;
+        width: 25%;
+    }
+    article {
+        margin-left: 0;
+        width: 40%;
+    }
+    .banner {
+        width: 27%;
+    }
+    /* layoutet skal stoppe med at udvide sig, når det når til 1206px */
+    .container {
+        max-width: 1206px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* flyt nav ned i bunden på mobil */
+@media screen and (max-width: 711px) {
+    .nav {
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo, .nav, article, .banner {
+        width: 100%;
+    }
+}
